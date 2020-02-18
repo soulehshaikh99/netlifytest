@@ -87,7 +87,7 @@ svg {
 		justify-content: space-around;
 		box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.1); }
 		.bottom-nav-link {
-				font-size: 1.2rem;
+				font-size: 1rem;
 				font-family: 'Poppins', sans-serif;
 				font-weight: 400;
 				letter-spacing: .5px;
