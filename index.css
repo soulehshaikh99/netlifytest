@@ -95,6 +95,8 @@ svg {
 				color: #44536F !important; }
 		.bottom-nav-item {
 				display: flex;
+				align-items: center;
+				flex: 0 0 33.33%;
 				flex-direction: column; }
 
 .close-menu, .home-icon, .howtos-icon, .coding-icon {
