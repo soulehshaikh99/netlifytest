@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <title>Navbar</title>
+</head>
+
+<body>
+    <header class="header">
+        <navbar class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#" aria-label="Home Page">
+                    <svg class="brand-icon" viewBox="0 0 842.9 256">
+                        <use xlink:href="sprite.svg#navbar-brand"></use>
+                    </svg>
+                </a>
+
+                <button class="flat-btn navbar-toggler" id="navbar-toggler" type="button">
+                    <div id="hamburger-menu" class="hamburger-menu">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                    </div>
+                </button>
+
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                        <li class="nav-item"><a href="howtos.html" class="nav-link">How to's</a></li>
+                        <li class="nav-item"><a href="coding.html" class="nav-link">Programming</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-bottom" id="navbar-bottom">
+                    <ul class="bottom-nav">
+                        <li class="bottom-nav-item active">
+                            <svg class="home-icon" viewBox="0 0 510.95 511">
+                                <use xlink:href="sprite.svg#home-icon"></use>
+                            </svg>
+                            <a href="index.html" class="bottom-nav-link">Home</a>
+                        </li>
+                        <li class="bottom-nav-item">
+                            <svg class="howtos-icon" viewBox="0 0 384 512">
+                                <use xlink:href="sprite.svg#howtos-icon"></use>
+                            </svg>
+                            <a href="howtos.html" class="bottom-nav-link">How to's</a>
+                        </li>
+                        <li class="bottom-nav-item">
+                            <svg class="coding-icon" viewBox="0 0 512 512">
+                                <use xlink:href="sprite.svg#coding-icon"></use>
+                            </svg>
+                            <a href="coding.html" class="bottom-nav-link">Coding</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-side" id="navbar-side">
+                    <button class="flat-btn navbar-side-toggler" id="navbar-side-toggler" type="button">
+                        <svg class="close-menu" viewBox="0 0 496 496">
+                            <use xlink:href="sprite.svg#close-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                        <li class="nav-item"><a href="howtos.html" class="nav-link">How to's</a></li>
+                        <li class="nav-item"><a href="coding.html" class="nav-link">Programming</a></li>
+                    </ul>
+                </div>
+            </div>
+        </navbar>
+    </header>
+
+    <main class="main">
+        <div class="container"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container"></div>
+    </footer>
+
+    <script src="./focus-visible.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
