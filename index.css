@@ -97,18 +97,11 @@ svg {
 				display: flex;
 				flex-direction: column; }
 
-.home-icon {
-		height: 2.4rem; }
-
-.howtos-icon {
-		height: 2.4rem; }
-
-.coding-icon {
+.close-menu, .home-icon, .howtos-icon, .coding-icon {
 		height: 2.4rem; }
 
 .close-menu {
-		width: 2.4rem;
-		height: 2.4rem; }
+		width: 2.4rem; }
 
 .hamburger-menu {
 		position: relative;
