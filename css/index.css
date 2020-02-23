@@ -61,12 +61,12 @@ main {
 				padding: 5rem 0rem;
 				margin: 0 auto; }
 		.footer-section {
-				font-family: 'Rubik', sans-serif; }
+				font-family: 'Rubik', sans-serif;
+				font-size: 1.4rem; }
 		.footer-header {
+				font-size: 1.6rem;
 				font-weight: 500;
 				padding: 0.8rem 0; }
-		.footer-section, .footer-header {
-				font-size: 1.6rem; }
 		.footer-nav-icon {
 				padding-top: 0.4rem;
 				height: 5rem; }
@@ -109,10 +109,6 @@ main {
 				padding: 0.6rem 0; }
 		.footer-nav-social > button:not(:last-child) {
 				margin-right: 2rem; } }
-
-@media (max-width: 840px) {
-		.footer-section, .footer-header {
-				font-size: 1.4rem; } }
 
 @media (max-width: 700px) {
 		.footer .container {
