@@ -84,7 +84,7 @@ main {
 				flex-direction: row;
 				justify-content: center; }
 				.footer-nav-social > button {
-						padding-top: .6rem; }
+						margin-top: .6rem; }
 						.footer-nav-social > button:not(:last-child) {
 								margin-right: 3rem; }
 
