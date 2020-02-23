@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon/16.png" sizes="16x16">
-    <link rel="icon" href="./favicon/32.png" sizes="32x32">
-    <link rel="icon" href="./favicon/48.png" sizes="48x48">
-    <link rel="icon" href="./favicon/64.png" sizes="64x64">
-    <link rel="icon" href="./favicon/96.png" sizes="96x96">
-    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon/16.png" sizes="16x16">
+    <link rel="icon" href="./assets/favicon/32.png" sizes="32x32">
+    <link rel="icon" href="./assets/favicon/48.png" sizes="48x48">
+    <link rel="icon" href="./assets/favicon/64.png" sizes="64x64">
+    <link rel="icon" href="./assets/favicon/96.png" sizes="96x96">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
     <title>Navbar</title>
 </head>
 
@@ -20,40 +20,39 @@
     <navbar class="navbar-bottom" id="navbar-bottom">
         <ul class="bottom-nav">
             <li class="bottom-nav-item active">
-                <a class="bottom-nav-link" href="index.html">
+                <a class="bottom-nav-link" href="./index.html">
                     <svg class="bottom-nav-icon home-icon" viewBox="0 0 510.95 511">
-                        <use xlink:href="sprite.svg#home-icon"></use>
+                        <use xlink:href="./assets/svg/sprite.svg#home-icon"></use>
                     </svg>
                     Home
                 </a>
             </li>
             <li class="bottom-nav-item">
-                <a class="bottom-nav-link" href="howtos.html">
+                <a class="bottom-nav-link" href="./pages/howtos.html">
                     <svg class="bottom-nav-icon howtos-icon" viewBox="0 0 512 512">
-                        <use xlink:href="sprite.svg#howtos-icon"></use>
+                        <use xlink:href="./assets/svg/sprite.svg#howtos-icon"></use>
                     </svg>
                     How to's
                 </a>
             </li>
             <li class="bottom-nav-item">
-                <a class="bottom-nav-link" href="coding.html">
+                <a class="bottom-nav-link" href="./pages/coding.html">
                     <svg class="bottom-nav-icon coding-icon" viewBox="0 0 512 477.87">
-                        <use xlink:href="sprite.svg#coding-icon"></use>
+                        <use xlink:href="./assets/svg/sprite.svg#coding-icon"></use>
                     </svg>
                     Coding
                 </a>
             </li>
             <li class="bottom-nav-item">
-                <a class="bottom-nav-link" href="search.html">
+                <a class="bottom-nav-link" href="./pages/search.html">
                     <svg class="bottom-nav-icon search-icon" viewBox="0 0 512 512">
-                        <use xlink:href="sprite.svg#search-icon"></use>
+                        <use xlink:href="./assets/svg/sprite.svg#search-icon"></use>
                     </svg>
                     Search
                 </a>
             </li>
         </ul>
     </navbar>
-
     <!-- Header -->
     <header class="header">
         <navbar class="navbar">
@@ -61,25 +60,23 @@
             <div class="navbar-side" id="navbar-side">
                 <button class="flat-btn navbar-side-toggler" id="navbar-side-toggler" type="button">
                     <svg class="close-menu" viewBox="0 0 496 496">
-                        <use xlink:href="sprite.svg#close-menu"></use>
+                        <use xlink:href="./assets/svg/sprite.svg#close-menu"></use>
                     </svg>
                 </button>
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
-                    <li class="nav-item"><a href="howtos.html" class="nav-link">How to's</a></li>
-                    <li class="nav-item"><a href="coding.html" class="nav-link">Coding</a></li>
+                    <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./pages/articles.html" class="nav-link">Articles</a></li>
+                    <li class="nav-item"><a href="./pages/howtos.html" class="nav-link">How to's</a></li>
+                    <li class="nav-item"><a href="./pages/coding.html" class="nav-link">Coding</a></li>
                 </ul>
             </div>
-
             <!-- Main Navbar -->
             <div class="container">
                 <a class="navbar-brand" href="#" aria-label="Home Page">
                     <svg class="brand-icon" viewBox="0 0 842.9 256">
-                        <use xlink:href="sprite.svg#navbar-brand"></use>
+                        <use xlink:href="./assets/svg/sprite.svg#navbar-brand"></use>
                     </svg>
                 </a>
-
                 <button class="flat-btn navbar-toggler" id="navbar-toggler" type="button">
                     <div id="hamburger-menu" class="hamburger-menu">
                         <span class="first"></span>
@@ -87,7 +84,6 @@
                         <span class="third"></span>
                     </div>
                 </button>
-
                 <div class="navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
@@ -99,12 +95,10 @@
             </div>
         </navbar>
     </header>
-
     <!-- Main -->
     <main class="main">
         <div class="container"></div>
     </main>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -115,9 +109,11 @@
                         <li class="footer-nav-item"><a class="footer-nav-link" href="./aboutus.html">About Us</a></li>
                         <li class="footer-nav-item"><a class="footer-nav-link" href="./aboutus.html">Contact Us</a></li>
                         <li class="footer-nav-item"><a class="footer-nav-link" href="./globalsitemap.html">Global
-                                Sitemap</a></li>
+                                Sitemap</a>
+                        </li>
                         <li class="footer-nav-item"><a class="footer-nav-link" href="./privacypolicy.html">Privacy
-                                Policy</a></li>
+                                Policy</a>
+                        </li>
                         <li class="footer-nav-item"><a class="footer-nav-link" href="./termsofuse.html">Terms of Use</a>
                         </li>
                     </ul>
@@ -139,26 +135,24 @@
                     <h3 class="footer-header">Find Us On</h3>
                     <div class="footer-nav-social">
                         <button class="flat-btn social-btn"><img class="footer-nav-icon"
-                                src="./social/facebook-color.svg" /></button>
+                                src="./assets/social/facebook-color.svg" /></button>
                         <button class="flat-btn social-btn"><img class="footer-nav-icon"
-                                src="./social/github-color.svg" /></button>
+                                src="./assets/social/github-color.svg" /></button>
                         <button class="flat-btn social-btn"><img class="footer-nav-icon"
-                                src="./social/instagram-color.svg" /></button>
+                                src="./assets/social/instagram-color.svg" /></button>
                         <button class="flat-btn social-btn"><img class="footer-nav-icon"
-                                src="./social/linkedin-color.svg"></button>
+                                src="./assets/social/linkedin-color.svg"></button>
                         <button class="flat-btn social-btn"><img class="footer-nav-icon"
-                                src="./social/pinterest-color.svg"></button>
+                                src="./assets/social/pinterest-color.svg"></button>
                     </div>
                 </section>
             </div>
         </div>
         <div class="footer-copyright"></div>
     </footer>
-
     <!-- Scripts -->
-    <script src="./focus-visible.min.js"></script>
-    <script src="./index.js"></script>
-
+    <script src="./js/focus-visible.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
