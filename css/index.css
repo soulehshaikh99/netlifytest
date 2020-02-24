@@ -208,7 +208,7 @@ main {
 				top: 0;
 				left: 100%; }
 				.navbar-side-toggler {
-						top: 2rem;
+						top: 2.1rem;
 						right: 1.5rem;
 						height: 2.4rem; }
 				.navbar-side, .navbar-side-toggler {
@@ -216,15 +216,15 @@ main {
 						background-color: #0E0E0E !important; }
 
 .bottom-nav {
-		background-color: #fff !important;
-		width: 100vw;
-		height: 5.6rem;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		list-style-type: none;
 		justify-content: space-around;
-		box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.1); }
+		box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.1);
+		background-color: #fff !important;
+		width: 100vw;
+		padding: 1rem 0; }
 		.bottom-nav-link {
 				display: flex;
 				flex-direction: column;
@@ -237,21 +237,17 @@ main {
 				letter-spacing: .5px;
 				color: #44536F !important;
 				height: 4.2rem; }
+		.bottom-nav-icon {
+				height: 2.4rem; }
 		.bottom-nav-item.active > .bottom-nav-link {
 				color: #3762f0 !important;
 				font-weight: 500; }
 		.bottom-nav-item.active > .bottom-nav-link > .bottom-nav-icon {
 				fill: #3762f0 !important; }
 
-.close-menu,
-.home-icon,
-.howtos-icon,
-.coding-icon,
-.search-icon {
-		height: 2.2rem; }
-
 .close-menu {
-		width: 2.4rem; }
+		width: 2.4rem;
+		height: 2.4rem; }
 
 .hamburger-menu {
 		position: relative;
@@ -407,4 +403,6 @@ main {
 
 @media (max-width: 400px) {
 		.bottom-nav-link {
-				font-size: 1rem; } }
+				font-size: 1rem; }
+		.bottom-nav-icon {
+				height: 2.2rem; } }
