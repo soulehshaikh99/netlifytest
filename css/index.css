@@ -34,6 +34,13 @@ body {
 		flex-direction: column;
 		height: 100vh; }
 
+.flat-btn {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		margin: 0;
+		padding: 0; }
+
 main {
 		padding-top: 8rem; }
 
@@ -79,8 +86,11 @@ main {
 				width: 100%; }
 				.footer-copyright p {
 						text-align: center; }
+		.footer-nav-btn {
+				margin-top: .8rem; }
+				.footer-nav-btn:not(:last-child) {
+						margin-right: 3rem; }
 		.footer-nav-icon {
-				padding-top: 0.4rem;
 				height: 4rem; }
 		.footer-nav-item {
 				font-weight: 400;
@@ -95,10 +105,6 @@ main {
 				flex-wrap: wrap;
 				flex-direction: row;
 				justify-content: center; }
-				.footer-nav-social > button {
-						margin-top: .6rem; }
-						.footer-nav-social > button:not(:last-child) {
-								margin-right: 3rem; }
 
 @media (max-width: 1600px) {
 		.footer .container {
@@ -116,7 +122,7 @@ main {
 				font-size: 1.6rem; }
 		.footer-nav-icon {
 				height: 3.5rem; }
-		.footer-nav-social > button:not(:last-child) {
+		.footer-nav-btn:not(:last-child) {
 				margin-right: 2.5rem; } }
 
 @media (max-width: 1200px) {
@@ -132,10 +138,12 @@ main {
 				width: 90%; }
 		.footer-nav-icon {
 				height: 3rem; }
+		.footer-nav-btn {
+				margin-top: .6rem; }
+				.footer-nav-btn:not(:last-child) {
+						margin-right: 2rem; }
 		.footer-nav-item {
-				padding: 0.6rem 0; }
-		.footer-nav-social > button:not(:last-child) {
-				margin-right: 2rem; } }
+				padding: 0.6rem 0; } }
 
 @media (max-width: 700px) {
 		.footer .container {
@@ -144,11 +152,11 @@ main {
 				padding: 3rem 0rem; }
 		.footer-column {
 				flex: 0 0 50%; }
+				.footer-column-social {
+						margin-top: 3rem;
+						flex: 0 0 100%; }
 		.footer-header, .footer-nav {
-				text-align: center; }
-		.footer-column-social {
-				margin-top: 3rem;
-				flex: 0 0 100%; } }
+				text-align: center; } }
 
 @media (max-width: 576px) {
 		.footer {
@@ -163,13 +171,6 @@ main {
 						font-size: 1.2rem; }
 				.footer-copyright {
 						font-size: 1rem; } }
-
-.flat-btn {
-		background-color: transparent;
-		border: none;
-		cursor: pointer;
-		margin: 0;
-		padding: 0; }
 
 .header .container,
 .hamburger-menu {
