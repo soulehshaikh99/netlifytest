@@ -54,6 +54,7 @@ main {
 		flex-grow: 1; }
 
 .footer {
+		z-index: -1;
 		width: 100%;
 		background-color: #08192B !important;
 		color: #fff !important; }
