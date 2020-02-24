@@ -23,8 +23,7 @@ a {
 		text-decoration: none; }
 
 svg {
-		backface-visibility: hidden;
-		transform: translateZ(0) scale(1, 1); }
+		backface-visibility: hidden; }
 
 .js-focus-visible :focus:not(.focus-visible) {
 		outline: 0 !important;
@@ -54,7 +53,6 @@ main {
 		flex-grow: 1; }
 
 .footer {
-		z-index: -1;
 		width: 100%;
 		background-color: #08192B !important;
 		color: #fff !important; }
