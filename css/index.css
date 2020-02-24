@@ -160,7 +160,9 @@ main {
 
 @media (max-width: 576px) {
 		.footer {
-				padding-bottom: 7rem; } }
+				padding-bottom: 7rem; }
+				.footer-nav-icon {
+						height: 2.75rem; } }
 
 @media (max-width: 400px) {
 		.footer {
