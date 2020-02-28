@@ -302,7 +302,7 @@ main {
 .footer {
 		font-family: 'Rubik', sans-serif;
 		width: 100%;
-		background-color: #08192B !important;
+		background-color: #002a32 !important;
 		color: #fff !important; }
 		.footer .container {
 				display: flex;
@@ -320,7 +320,7 @@ main {
 				padding: 0.8rem 0; }
 		.footer-copyright {
 				font-size: 1.4rem;
-				background-color: #0E2A47 !important;
+				background-color: rgba(38, 38, 38, 0.5) !important;
 				padding: 1.7rem 0rem; }
 				.footer-copyright p {
 						text-align: center; }
@@ -335,7 +335,7 @@ main {
 				list-style-type: none;
 				padding: 0.8rem 0; }
 		.footer-nav-link {
-				color: #3987da; }
+				color: #00d6d6 !important; }
 				.footer-nav-link:hover, .footer-nav-link:focus {
 						color: #fff !important;
 						text-decoration: underline; }
