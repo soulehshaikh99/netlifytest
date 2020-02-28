@@ -335,8 +335,9 @@ main {
 				list-style-type: none;
 				padding: 0.8rem 0; }
 		.footer-nav-link {
-				color: inherit; }
+				color: #3987da; }
 				.footer-nav-link:hover, .footer-nav-link:focus {
+						color: #fff !important;
 						text-decoration: underline; }
 		.footer-nav-social {
 				display: flex;
