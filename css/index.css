@@ -420,8 +420,4 @@ main {
 				.footer-copyright {
 						font-size: 1rem; }
 				.footer-nav-icon {
-						height: 2.5rem; }
-				.footer-column:nth-child(1), .footer-column:nth-child(2) {
-						flex: 0 0 100%; }
-				.footer-column:nth-child(2) {
-						margin-top: 3rem; } }
+						height: 2.5rem; } }
