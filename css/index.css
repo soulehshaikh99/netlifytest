@@ -426,7 +426,9 @@ main {
 		.footer {
 				margin-bottom: 7rem; }
 				.footer-nav-icon {
-						height: 2.75rem; } }
+						height: 2.75rem; }
+				.footer .powered-by-icon {
+						height: 7rem; } }
 
 @media (max-width: 550px) {
 		.footer-column:nth-child(1), .footer-column:nth-child(2) {
@@ -445,4 +447,6 @@ main {
 				.footer-credits, .footer-copyright {
 						font-size: 1rem; }
 				.footer-nav-icon {
-						height: 2.5rem; } }
+						height: 2.5rem; }
+				.footer .powered-by-icon {
+						height: 6.5rem; } }
