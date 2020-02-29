@@ -428,6 +428,8 @@ main {
 				margin-bottom: 7rem; }
 				.footer-nav-icon {
 						height: 2.75rem; }
+				.footer-credits > p {
+						margin-top: 1rem; }
 				.footer .powered-by-icon {
 						height: 7rem; } }
 
