@@ -230,7 +230,7 @@ body {
 				width: 95%; } }
 
 @media (max-width: 576px) {
-		body {
+		html, body {
 				overflow-x: hidden; }
 		.header {
 				position: relative; }
@@ -288,7 +288,9 @@ body {
 						height: 2.2rem; } }
 
 main {
-		margin-top: 8rem; }
+		flex-grow: 1;
+		margin-top: 8rem;
+		min-height: 200vh; }
 
 @media (max-width: 960px) {
 		main {
@@ -301,9 +303,6 @@ main {
 @media (max-width: 576px) {
 		main {
 				margin-top: 6.4rem; } }
-
-main {
-		flex-grow: 1; }
 
 .footer {
 		font-family: 'Rubik', sans-serif;
