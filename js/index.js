@@ -4,10 +4,12 @@ const hamburgerMenu = document.getElementById('hamburger-menu');
 const navbarSideToggler = document.getElementById('navbar-side-toggler');
 const backToTopButton = document.getElementById("back-to-top-btn");
 
-const scrollThreshold = 200;
+const scrollThreshold = 20;
 
 function scrollFunction() {
-    if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold)
+    console.log('Page Scrolled');
+    // if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold)
+    if ((document.documentElement.scrollTop || document.body.scrollTop) > scrollThreshold)
         backToTopButton.classList.add('active');
     else backToTopButton.classList.remove('active');
 }

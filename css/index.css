@@ -26,6 +26,14 @@
 		font-display: swap;
 		src: local("Rubik Medium"), local("Rubik-Medium"), url(../assets/fonts/Rubik-Medium.woff2) format("woff2"); }
 
+@keyframes bounce-in {
+		0% {
+				transform: scale(0); }
+		60% {
+				transform: scale(1.2); }
+		100% {
+				transform: scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -64,13 +72,12 @@ body {
 		flex-direction: column;
 		height: 100vh; }
 
-@keyframes bounce-in {
-		0% {
-				transform: scale(0); }
-		60% {
-				transform: scale(1.2); }
-		100% {
-				transform: scale(1); } }
+.flat-btn {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		margin: 0;
+		padding: 0; }
 
 .back-to-top {
 		position: fixed;
@@ -90,13 +97,6 @@ body {
 		transform: scale(1);
 		transition: all 0s;
 		animation: bounce-in 0.3s linear; }
-
-.flat-btn {
-		background-color: transparent;
-		border: none;
-		cursor: pointer;
-		margin: 0;
-		padding: 0; }
 
 .header .container,
 .hamburger-menu {
@@ -286,8 +286,7 @@ body {
 				width: 95%; } }
 
 @media (max-width: 576px) {
-		html,
-		body {
+		html {
 				overflow-x: hidden; }
 		.header {
 				position: relative; }
