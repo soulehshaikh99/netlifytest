@@ -58,7 +58,8 @@
         <nav class="navbar">
             <!-- Side Navbar -->
             <div class="navbar-side" id="navbar-side">
-                <button class="flat-btn navbar-side-toggler" id="navbar-side-toggler" type="button">
+                <button class="flat-btn navbar-side-toggler" id="navbar-side-toggler" role="button"
+                    aria-label="Close navigation menu">
                     <svg class="close-menu" viewBox="0 0 496 496">
                         <use xlink:href="./assets/svg/sprite.svg#close-menu"></use>
                     </svg>
@@ -77,7 +78,8 @@
                         <use xlink:href="./assets/svg/sprite.svg#navbar-brand"></use>
                     </svg>
                 </a>
-                <button class="flat-btn navbar-toggler" id="navbar-toggler" type="button">
+                <button class="flat-btn navbar-toggler" id="navbar-toggler" role="button"
+                    aria-label="Open navigation menu">
                     <span id="hamburger-menu" class="hamburger-menu">
                         <span class="first"></span>
                         <span class="second"></span>
@@ -97,7 +99,13 @@
     </header>
     <!-- Main -->
     <main class="main">
-        <div class="container"></div>
+        <div class="container">
+            <button class="flat-btn back-to-top" id="back-to-top-btn">
+                <svg class="back-to-top-icon" viewBox="0 0 512 311.34">
+                    <use xlink:href="./assets/svg/sprite.svg#back-to-top-icon"></use>
+                </svg>
+            </button>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="footer">
