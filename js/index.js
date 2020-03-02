@@ -4,7 +4,7 @@ const hamburgerMenu = document.getElementById('hamburger-menu');
 const navbarSideToggler = document.getElementById('navbar-side-toggler');
 const backToTopButton = document.getElementById("back-to-top-btn");
 
-const scrollThreshold = 20;
+const scrollThreshold = 200;
 
 function scrollFunction() {
     if ((document.documentElement.scrollTop || document.body.scrollTop) > scrollThreshold)
