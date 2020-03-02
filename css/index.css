@@ -69,8 +69,7 @@ svg {
 
 body {
 		display: flex;
-		flex-direction: column;
-		height: 100vh; }
+		flex-direction: column; }
 
 .flat-btn {
 		background-color: transparent;
@@ -286,7 +285,8 @@ body {
 				width: 95%; } }
 
 @media (max-width: 576px) {
-		html {
+		html,
+		body {
 				overflow-x: hidden; }
 		.header {
 				position: relative; }
