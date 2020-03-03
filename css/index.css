@@ -102,8 +102,8 @@ body {
 .back-to-top {
   position: fixed;
   border-radius: 50%;
-  bottom: 2.5rem;
-  right: 2.5rem;
+  bottom: 2.8rem;
+  right: 2.4rem;
   width: 5rem;
   height: 5rem;
   background-color: #fff !important;
@@ -114,8 +114,9 @@ body {
 }
 
 .back-to-top-icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.14rem;
+  width: 2.14rem;
+  fill: #000 !important;
 }
 
 .back-to-top.active {
@@ -129,6 +130,12 @@ body {
 .back-to-top:focus,
 .back-to-top:hover {
   box-shadow: 0 4px 8px 2px rgba(0,0,0,0.25) !important;
+}
+
+.back-to-top:active>.back-to-top-icon,
+.back-to-top:focus>.back-to-top-icon,
+.back-to-top:hover>.back-to-top-icon {
+  fill: #3762f0 !important;
 }
 
 .header .container,
@@ -482,6 +489,16 @@ main {
 }
 
 @media (max-width:1440px) {
+  .back-to-top {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .back-to-top-icon {
+    height: 1.93rem;
+    width: 1.93rem;
+  }
+
   .header .container {
     width: 85%;
   }
@@ -626,9 +643,13 @@ main {
 @media (max-width:576px) {
   .back-to-top {
     bottom: 9rem;
-    right: 5%;
     width: 4rem;
     height: 4rem;
+  }
+
+  .back-to-top-icon {
+    height: 1.71rem;
+    width: 1.71rem;
   }
 
   html,
@@ -757,11 +778,6 @@ main {
 @media (max-width:400px) {
   .back-to-top {
     bottom: 8.2rem;
-  }
-
-  .back-to-top-icon {
-    height: 1.75rem;
-    width: 1.75rem;
   }
 
   .bottom-nav {

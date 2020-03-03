@@ -1,29 +1,26 @@
-const menuToggler = document.getElementById('navbar-toggler');
-const sideNavbar = document.getElementById('navbar-side');
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const navbarSideToggler = document.getElementById('navbar-side-toggler');
-const backToTopButton = document.getElementById("back-to-top-btn");
+import {
+    sideNavbar,
+    sideNavbarOn,
+    sideNavbarOff,
+    hamburgerMenu,
+    backToTopButton
+} from './ui-elements.js';
 
-const scrollThreshold = 200;
+import {
+    scrollFunction,
+    scrollToTop
+} from './functions.js';
 
-function scrollFunction() {
-    if ((document.documentElement.scrollTop || document.body.scrollTop) > scrollThreshold)
-        backToTopButton.classList.add('active');
-    else backToTopButton.classList.remove('active');
-}
-
-menuToggler.addEventListener('click', () => {
+sideNavbarOn.addEventListener('click', () => {
     sideNavbar.classList.toggle('slide');
     hamburgerMenu.classList.toggle('opened');
 });
 
-navbarSideToggler.addEventListener('click', () => {
+sideNavbarOff.addEventListener('click', () => {
     sideNavbar.classList.toggle('slide');
     hamburgerMenu.classList.toggle('opened');
 });
 
-backToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0 });
-});
+backToTopButton.addEventListener('click', scrollToTop);
 
-window.onscroll = () => scrollFunction();
+window.onscroll = scrollFunction;
