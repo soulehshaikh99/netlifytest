@@ -1,0 +1,820 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Poppins Regular"), local("Poppins-Regular"), url(../assets/fonts/Poppins-Regular.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Poppins Medium"), local("Poppins-Medium"), url(../assets/fonts/Poppins-Medium.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Rubik Regular"), local("Rubik-Regular"), url(../assets/fonts/Rubik-Regular.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Rubik Medium"), local("Rubik-Medium"), url(../assets/fonts/Rubik-Medium.woff2) format("woff2")
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0)
+    }
+
+    60% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+*:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5) !important
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent
+}
+
+[tabindex="-1"]:focus {
+    outline: 0 !important;
+    box-shadow: none !important
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none
+}
+
+svg {
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1)
+}
+
+.t :focus:not(.n) {
+    outline: 0 !important;
+    box-shadow: none !important
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7fbfb !important
+}
+
+.r {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 0
+}
+
+.i {
+    position: fixed;
+    border-radius: 50%;
+    bottom: 2.8rem;
+    right: 2.4rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff !important;
+    visibility: hidden;
+    transform: scale(0);
+    transition: transform .3s, visibility 0s .3s;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.25) !important
+}
+
+.s {
+    height: 2.14rem;
+    width: 2.14rem;
+    fill: #000 !important
+}
+
+.i.o {
+    visibility: visible;
+    transform: scale(1);
+    transition: all 0s;
+    animation: bounce-in .3s linear
+}
+
+.i:active,
+.i:focus,
+.i.u:hover {
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25) !important
+}
+
+.i:active>.s,
+.i:focus>.s,
+.i.u:hover>.s {
+    fill: #3762f0 !important
+}
+
+.header .a,
+.f {
+    display: flex
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff !important;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1)
+}
+
+.header .a {
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8rem;
+    width: 75%;
+    margin: 0 auto
+}
+
+.l {
+    background: #fff !important
+}
+
+.c,
+.h {
+    display: flex
+}
+
+.c {
+    margin-left: .25rem
+}
+
+.p,
+.d,
+.v,
+.m {
+    display: none
+}
+
+.p {
+    position: fixed;
+    bottom: 0
+}
+
+.d {
+    height: 2rem;
+    margin-right: 1.5rem;
+    background-color: #fff !important
+}
+
+.v {
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 100%
+}
+
+.m {
+    top: 2.1rem;
+    right: 1.5rem;
+    height: 2.4rem
+}
+
+.v,
+.m {
+    position: absolute;
+    background-color: #0e0e0e !important
+}
+
+.g {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff !important;
+    width: 100vw;
+    padding: 1.4rem 0
+}
+
+.y {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: #44536f !important;
+    height: 4.2rem
+}
+
+.b {
+    height: 2.4rem
+}
+
+.w.o>.y {
+    color: #3762f0 !important;
+    font-weight: 500
+}
+
+.w.o>.y>.b {
+    fill: #3762f0 !important
+}
+
+.x {
+    width: 2.2rem;
+    height: 2.2rem
+}
+
+.f {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem
+}
+
+.f>.k,
+.f>._,
+.f>.j {
+    position: absolute;
+    display: block;
+    background-color: #000 !important;
+    height: .161rem;
+    width: 100%;
+    border-radius: .27rem;
+    transform-origin: center;
+    transition: all .7s cubic-bezier(0.8, -0.5, 0.2, 1.4)
+}
+
+.f>.k {
+    top: .206rem
+}
+
+.f>._ {
+    top: .919rem
+}
+
+.f>.j {
+    top: 1.633rem
+}
+
+.f.q>.k,
+.f.q>._,
+.f.q>.j {
+    top: 50%
+}
+
+.f.q>.k {
+    transform: rotate(405deg) translateY(-50%)
+}
+
+.f.q>._ {
+    transform: translateX(100%) scale(0, 1)
+}
+
+.f.q>.j {
+    transform: rotate(-585deg) translateY(-50%)
+}
+
+.z {
+    position: relative;
+    list-style-type: none;
+    padding: 0 1rem .8rem;
+    margin: 0 1rem
+}
+
+.z.o>.te {
+    font-weight: 500;
+    color: #3762f0 !important
+}
+
+.z.o>.te::after {
+    background-color: #3762f0 !important;
+    width: 60%;
+    transition-duration: .26s
+}
+
+.z.o>.te:hover::after,
+.z.o>.te:focus::after {
+    width: 95%
+}
+
+.te {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: #44536f !important
+}
+
+.te:hover,
+.te:focus {
+    color: #000 !important
+}
+
+.te::after {
+    content: '';
+    background-color: #44536f !important;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: .2rem;
+    transition: width .7s cubic-bezier(0.75, -0.5, 0, 1.75)
+}
+
+.te:hover::after,
+.te:focus::after {
+    width: 95%
+}
+
+.tt {
+    height: 6rem
+}
+
+main {
+    flex-grow: 1;
+    margin-top: 8rem;
+    min-height: 200vh
+}
+
+.footer {
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    background-color: #002a32 !important;
+    color: #fff !important
+}
+
+.footer .a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    padding: 5rem;
+    margin: 0 auto
+}
+
+.tn:nth-child(5) {
+    margin-top: 3rem;
+    flex: 0 0 100%;
+    text-align: center
+}
+
+.tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.tr>p {
+    margin-top: 1.5rem
+}
+
+.footer .ti {
+    height: 9rem
+}
+
+.ts {
+    font-size: 1.6rem
+}
+
+.to {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: .8rem 0
+}
+
+.tr,
+.tu {
+    font-size: 1.4rem
+}
+
+.tu {
+    background-color: rgba(38, 38, 38, 0.5) !important;
+    padding: 1.7rem 0
+}
+
+.tu p {
+    text-align: center
+}
+
+.ta {
+    margin-top: .8rem
+}
+
+.ta:not(:last-child) {
+    margin-right: 3rem
+}
+
+.ta:hover>svg,
+.ta:focus>svg {
+    opacity: 1
+}
+
+.ta>svg {
+    opacity: .5
+}
+
+.tf {
+    height: 3.5rem
+}
+
+.tl {
+    font-weight: 400;
+    list-style-type: none;
+    padding: .8rem 0
+}
+
+.tc {
+    color: #00d6d6 !important
+}
+
+.tc:hover,
+.tc:focus {
+    color: #fff !important;
+    text-decoration: underline
+}
+
+.th {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center
+}
+
+@media(max-width:1600px) {
+    .header .a {
+        width: 80%
+    }
+
+    .footer .a {
+        width: 80%
+    }
+
+    .footer .ti {
+        height: 8rem
+    }
+}
+
+@media(max-width:1440px) {
+    .i {
+        width: 4.5rem;
+        height: 4.5rem
+    }
+
+    .s {
+        height: 1.93rem;
+        width: 1.93rem
+    }
+
+    .header .a {
+        width: 85%
+    }
+
+    .tt {
+        height: 5.5rem
+    }
+
+    .footer .a {
+        width: 85%
+    }
+
+    .ts {
+        font-size: 1.4rem
+    }
+
+    .tr,
+    .tu {
+        font-size: 1.2rem
+    }
+
+    .tu {
+        padding: 1.5rem 0
+    }
+
+    .to {
+        font-size: 1.6rem
+    }
+
+    .ta:not(:last-child) {
+        margin-right: 2.5rem
+    }
+}
+
+@media(max-width:1200px) {
+    .footer .a {
+        padding: 5rem 3rem
+    }
+
+    .footer .ti {
+        height: 7.5rem
+    }
+}
+
+@media(max-width:1024px) {
+    .footer .a {
+        padding: 5rem 0
+    }
+}
+
+@media(max-width:960px) {
+    .header .a {
+        width: 90%;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .c {
+        margin: 1.2rem 0 1.6rem 0
+    }
+
+    .tt {
+        height: 5rem
+    }
+
+    .z {
+        margin-bottom: 1.2rem
+    }
+
+    main {
+        margin-top: 12.3rem
+    }
+
+    .footer .a {
+        width: 90%
+    }
+
+    .tf {
+        height: 3rem
+    }
+
+    .ta {
+        margin-top: .6rem
+    }
+
+    .ta:not(:last-child) {
+        margin-right: 2rem
+    }
+
+    .tl {
+        padding: .6rem 0
+    }
+}
+
+@media(max-width:840px) {
+    .tt {
+        height: 4.5rem
+    }
+
+    .te {
+        font-size: 1.4rem
+    }
+
+    main {
+        margin-top: 11.4rem
+    }
+
+    .tn:not(:last-child) {
+        flex: 0 0 33.33%
+    }
+
+    .tn:nth-child(4) {
+        order: 4;
+        flex: 0 0 100%;
+        margin-top: 3.8rem
+    }
+
+    .to,
+    .tp {
+        text-align: center
+    }
+}
+
+@media(max-width:768px) {
+    .l .a {
+        width: 95%
+    }
+}
+
+@media(max-width:700px) {
+    .footer .a {
+        width: 95%;
+        padding: 3rem 0
+    }
+
+    .to,
+    .tp {
+        text-align: center
+    }
+}
+
+@media(max-width:576px) {
+    .i {
+        bottom: 9rem;
+        width: 4rem;
+        height: 4rem
+    }
+
+    .s {
+        height: 1.71rem;
+        width: 1.71rem
+    }
+
+    html,
+    body {
+        overflow-x: hidden
+    }
+
+    .header {
+        position: relative
+    }
+
+    .header .a {
+        width: 100%;
+        flex-direction: row;
+        min-height: auto
+    }
+
+    .c {
+        margin: 1.2rem 0 1.2rem 1.5rem
+    }
+
+    .p,
+    .d,
+    .v,
+    .m {
+        display: block
+    }
+
+    .td {
+        display: none
+    }
+
+    .v {
+        transition: left .7s ease-in-out;
+        transition-delay: 0s
+    }
+
+    .v.tv {
+        left: 0;
+        transition-delay: .7s
+    }
+
+    .h {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw
+    }
+
+    .tm {
+        padding: 0 0 .8rem;
+        margin: 0 auto 1.8rem
+    }
+
+    .tt {
+        height: 4rem
+    }
+
+    .z {
+        padding: 0 0 .8rem;
+        margin: 0 auto 1.8rem
+    }
+
+    .z.o>.te {
+        color: #fff !important
+    }
+
+    .z.o>.te::after {
+        background-color: #fff !important
+    }
+
+    .te {
+        color: #fff !important
+    }
+
+    .te:hover,
+    .te:focus {
+        color: #fff !important
+    }
+
+    .te::after {
+        background-color: #fff !important;
+        left: 0;
+        transform: none
+    }
+
+    .te:hover::after,
+    .te:focus::after {
+        width: 100%
+    }
+
+    main {
+        margin-top: 6.4rem
+    }
+
+    .footer {
+        margin-bottom: 7rem
+    }
+
+    .tf {
+        height: 2.75rem
+    }
+
+    .tr>p {
+        margin-top: 1rem
+    }
+
+    .footer .ti {
+        height: 7rem
+    }
+}
+
+@media(max-width:550px) {
+
+    .tn:nth-child(1),
+    .tn:nth-child(2) {
+        flex: 0 0 50%
+    }
+
+    .tn:nth-child(3) {
+        margin-top: 3rem;
+        flex: 0 0 100%
+    }
+}
+
+@media(max-width:400px) {
+    .i {
+        bottom: 8.2rem
+    }
+
+    .g {
+        padding: 1rem 0
+    }
+
+    .y {
+        font-size: 1rem
+    }
+
+    .b {
+        height: 2.2rem
+    }
+
+    .footer {
+        margin-bottom: 6.2rem
+    }
+
+    .to {
+        font-size: 1.4rem
+    }
+
+    .ts {
+        font-size: 1.2rem
+    }
+
+    .tr,
+    .tu {
+        font-size: 1rem
+    }
+
+    .tf {
+        height: 2.5rem
+    }
+
+    .footer .ti {
+        height: 6.5rem
+    }
+}
