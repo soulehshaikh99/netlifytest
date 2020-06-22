@@ -1,6 +1,6 @@
-#RewriteEngine on
-#RewriteCond %{HTTP_REFERER} !^http://nostalgic-wilson-93d4d5.netlify.app/.*$ [NC]
-#RewriteCond %{HTTP_REFERER} !^http://nostalgic-wilson-93d4d5.netlify.app$ [NC]
-#RewriteCond %{HTTP_REFERER} !^http://www.nostalgic-wilson-93d4d5.netlify.app/.*$ [NC]
-#RewriteCond %{HTTP_REFERER} !^http://www.nostalgic-wilson-93d4d5.netlify.app$ [NC]
-#RewriteRule .*\.(jpe?g|png|webp)$ - [F,NC]
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://nostalgic-wilson-93d4d5.netlify.app/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://nostalgic-wilson-93d4d5.netlify.app$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.nostalgic-wilson-93d4d5.netlify.app/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.nostalgic-wilson-93d4d5.netlify.app$ [NC]
+RewriteRule .*\.(jpe?g|png|webp)$ - [F,NC]
